@@ -1,0 +1,29 @@
+:root {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: var(--space-small) var(--space-smaller);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #000000;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+    .selection {
+      display: flex;
+      flex-direction: row;
+      font-weight: normal;
+      gap: var(--space);
+      .text-wrapper {
+        cursor: pointer;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    }
+  }
+}
