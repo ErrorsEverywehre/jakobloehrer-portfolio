@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import "./Navbar.scss";
-
+import {useState} from 'react'
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState("Home");
   const [selectedLang, setSelectedLang] = useState("EN");

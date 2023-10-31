@@ -1,0 +1,28 @@
+:root {
+  .sectionTitle {
+    align-items: flex-start;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #000000;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: var(--space-small) var(--space-smaller);
+
+    .text {
+      font-weight: bold;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+      position: relative;
+      text-align: justify;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+
+
+}

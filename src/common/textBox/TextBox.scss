@@ -1,0 +1,23 @@
+:root {
+.textBox {
+  display: flex;
+  flex-direction: column;
+  padding: 
+
+
+  .title{
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+
+  }
+  .text {
+    font-weight: normal;
+    hyphens: auto;
+
+    text-align: justify;
+    display: block;
+  }
+}
+
+}
