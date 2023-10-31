@@ -1,23 +1,23 @@
 :root {
-.textBox {
-  display: flex;
-  flex-direction: column;
-  padding: 
+  .textBox {
+    display: flex;
+    flex-direction: column;
 
+    div {
+      padding: 0 var(--space-smaller);
+    }
 
-  .title{
-    font-weight: bold;
-    width: 100%;
-    border-bottom: 1px solid var(--secondary);
+    .title {
+      width: 100%;
+      font-weight: bold;
+      border-bottom: 1px solid var(--secondary);
+    }
+    .text {
+      display: block;
+      font-weight: normal;
+      hyphens: auto;
 
+      text-align: justify;
+    }
   }
-  .text {
-    font-weight: normal;
-    hyphens: auto;
-
-    text-align: justify;
-    display: block;
-  }
-}
-
 }

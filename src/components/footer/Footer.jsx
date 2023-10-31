@@ -1,11 +1,12 @@
-import { Button } from "@chakra-ui/react";
+import { MdArrowUpward } from "react-icons/md";
+import Button from "../../common/button/Button";
 import "./Footer.scss";
 
- const Footer = () => {
+const Footer = () => {
   return (
     <div className="footer">
-      <p className="div">Made by me with ReactJS and mucht ♥</p>
-      <Button stateProp="default" />
+      <p className="div">Made by me with ReactJS and much ♥</p>
+      <Button icon={<MdArrowUpward />} text="back to top" />
     </div>
   );
 };
