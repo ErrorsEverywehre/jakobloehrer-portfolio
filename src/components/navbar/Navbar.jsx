@@ -1,5 +1,5 @@
+import { useState } from "react";
 import "./Navbar.scss";
-import {useState} from 'react'
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState("Home");
   const [selectedLang, setSelectedLang] = useState("EN");
@@ -22,7 +22,9 @@ const Navbar = () => {
         {tabs.map((tab) => (
           <div
             key={tab.id}
-            className={`text-wrapper ${selectedTab === tab.label ? "bold" : ""}`}
+            className={`text-wrapper ${
+              selectedTab === tab.label ? "bold" : ""
+            }`}
             onClick={() => setSelectedTab(tab.label)}
           >
             {tab.label}
@@ -31,8 +33,13 @@ const Navbar = () => {
       </div>
       <div className="languages selection">
         {languages.map((lang) => (
-          <div             onClick={() => setSelectedLang(lang.label)}
-           key={lang.id} className={`text-wrapper ${selectedLang === lang.label ? "bold" : ""}`}>
+          <div
+            onClick={() => setSelectedLang(lang.label)}
+            key={lang.id}
+            className={`text-wrapper ${
+              selectedLang === lang.label ? "bold" : ""
+            }`}
+          >
             {lang.label}
           </div>
         ))}

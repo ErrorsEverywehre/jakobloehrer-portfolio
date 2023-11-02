@@ -7,7 +7,9 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <About />
+      <div className="section-wrapper">
+        <About />
+      </div>
       <Footer />
     </>
   );
