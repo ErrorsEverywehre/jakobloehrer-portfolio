@@ -1,5 +1,9 @@
 :root {
   .section-wrapper {
+    display: flex;
+    flex-direction: column;
     max-width: 872px;
+    margin: var(--space-biggest) 0;
+    gap: var(--space-biggest);
   }
 }
