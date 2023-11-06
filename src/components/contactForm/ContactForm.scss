@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap");
+
+:root {
+  .contactForm {
+    border: 1px solid;
+    width: 500px;
+    padding: var(--space);
+    display: flex;
+    flex-direction: column;
+    gap : var(--space);
+    .inputs-wrapper{
+    .input-wrapper {
+      border-bottom: 1px solid;
+      display: flex;
+      white-space: nowrap;
+      gap: var(--space-big);
+
+      input {
+        background: none;
+        border: 0;
+        color: #000000;
+        font-family: "Swanky and Moo Moo", sans-serif;
+        font-size: 25px;
+        height: 23px;
+        line-height: normal;
+        padding: 0;
+        text-align: justify;
+        width: 100%;
+
+      }
+      textarea{
+        background: none;
+        border: 0;
+        color: #000000;
+        font-family: "Swanky and Moo Moo", sans-serif;
+        font-size: 25px;
+        line-height: normal;
+        padding: 0;
+        text-align: justify;
+        text-decoration: underline;
+        height: 300px ;
+        width: 100%;
+      }
+      .message-input{
+        height: 300px;
+      }
+
+      .input-description {
+      }
+      }
+    }
+    .button-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

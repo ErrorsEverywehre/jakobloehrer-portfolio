@@ -7,12 +7,14 @@ import {
 } from "react-icons/ai";
 import SectionTitle from "../../common/sectionTitle/SectionTitle";
 import TextBox from "../../common/textBox/TextBox";
+import ContactForm from "../../components/contactForm/ContactForm";
 const Contacts = () => {
   return (
     <div className="contacts">
       <SectionTitle title="Contacts" />
       <TextBox text="feel free to contact me bla bla " />
 
+<div className="contactForm-wrapper"> <ContactForm /> </div>
       <div className="socials">
         <div className="socials-title">Socials</div>{" "}
         <div className="socials-icons">
