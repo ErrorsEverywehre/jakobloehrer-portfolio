@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Navbar.scss";
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState("Home");
@@ -15,6 +16,12 @@ const Navbar = () => {
     { label: "EN", id: 5 },
     { label: "DE", id: 6 },
   ];
+
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className="navbar">
@@ -34,7 +41,10 @@ const Navbar = () => {
       <div className="languages selection">
         {languages.map((lang) => (
           <div
-            onClick={() => setSelectedLang(lang.label)}
+            onClick={() => {
+              setSelectedLang(lang.label);
+              changeLanguage(lang.label.toLowerCase());
+            }}
             key={lang.id}
             className={`text-wrapper ${
               selectedLang === lang.label ? "bold" : ""

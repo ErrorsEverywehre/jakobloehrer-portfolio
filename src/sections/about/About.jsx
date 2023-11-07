@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import skeleton from "./../../assets/skeletonButterfly.png";
 import TextBox from "./../../common/textBox/TextBox";
 import "./About.scss";
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="about">
       <div className="left-wrapper">
@@ -31,7 +33,7 @@ const About = () => {
         </div>
 
         <div className="whatDrivesMe-wrapper">
-          <div className="dieText">"I'm going to die one day"</div>
+          <div className="dieText">{t("DIE_TEXT")}</div>
           <TextBox text="This simple truth fuels my passion. Aware of life's brevity, I'm driven to experience, create, and innovate. Every moment matters, and I'm committed to making the most of my time by embracing challenges and exploring endless possibilities." />
         </div>
         <div className="image-wrapper">
