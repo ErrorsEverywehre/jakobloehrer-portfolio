@@ -1,10 +1,13 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { AiOutlineSend } from "react-icons/ai";
 import Button from "../../common/button/Button";
 import "./ContactForm.scss";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -25,27 +28,27 @@ const ContactForm = () => {
     let isValid = true;
 
     if (!name.trim()) {
-      setNameError("Name is required");
+      setNameError("NAME_REQUIRED");
       isValid = false;
     } else {
       setNameError("");
     }
 
     if (!email.trim() || !email.match(emailRegex)) {
-      setEmailError("Invalid email address");
+      setEmailError("INVALID_EMAIL");
       isValid = false;
     } else {
       setEmailError("");
     }
     if (!subject.trim()) {
-      setSubjectError("Subject is required");
+      setSubjectError("SUBJECT_REQUIRED");
       isValid = false;
     } else {
       setSubjectError("");
     }
 
     if (!message.trim()) {
-      setMessageError("Message is required");
+      setMessageError("MESSAGE_REQUIRED");
       isValid = false;
     } else {
       setMessageError("");
@@ -84,13 +87,13 @@ const ContactForm = () => {
     <div className="contactForm">
       <div className="inputs-wrapper">
         <div className={`name-input input-wrapper ${nameError ? "error" : ""}`}>
-          <div className="input-description">Name, Surname:</div>
+          <div className="input-description">{t("NAME_SURNAME")}:</div>
           <input
             className="name-input"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {nameError && <span className="error-message">{nameError}</span>}
+          {nameError && <span className="error-message">{t(nameError)}</span>}
         </div>
         <div
           className={`name-input input-wrapper ${emailError ? "error" : ""}`}
@@ -102,21 +105,21 @@ const ContactForm = () => {
             onChange={(e) => setEmail(e.target.value)}
             type="email"
           />
-          {emailError && <span className="error-message">{emailError}</span>}
+          {emailError && <span className="error-message">{t(emailError)}</span>}
         </div>
         <div
           className={`subject-input input-wrapper ${
             subjectError ? "error" : ""
           }`}
         >
-          <div className="input-description">Subject:</div>
+          <div className="input-description">{t("SUBJECT")}:</div>
           <input
             className="subject-input"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
           />
           {subjectError && (
-            <span className="error-message">{subjectError}</span>
+            <span className="error-message">{t(subjectError)}</span>
           )}
         </div>
         <div
@@ -124,18 +127,17 @@ const ContactForm = () => {
             messageError ? "error" : ""
           }`}
         >
-          <div className="input-description">Message: </div>
+          <div className="input-description">{t("MESSAGE")}: </div>
           <div
             className={`message-wrapper ${
               messageError && "textboxError-wrapper"
             }`}
           >
             {messageError && (
-              <span className="error-message">{messageError}</span>
+              <span className="error-message">{t(messageError)}</span>
             )}
             <textarea
               className="message-input"
-              placeholder="Enter your message here..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
@@ -143,7 +145,7 @@ const ContactForm = () => {
         </div>
 
         <div className="button-wrapper">
-          <Button onClick={submitForm} text="Send" icon={<AiOutlineSend />} />
+          <Button onClick={submitForm} text="SEND" icon={<AiOutlineSend />} />
         </div>
       </div>
     </div>

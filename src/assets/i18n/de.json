@@ -1,3 +1,26 @@
 {
-  "DIE_TEXT": "Ich werde eines Tages sterben."
+  "CONTACT": "Kontakt",
+  "ABOUT": "Über mich",
+  "WORK": "Arbeiten",
+  "HELLO_IM": "Hallo, ich bin",
+  "AND_IM_A": "und ich bin ein",
+  "ABOUT_ME": "Über mich",
+  "ABOUT_ME_TEXT": "Hallo! Ich bin Jakob, ein leidenschaftlicher Entwickler aus der Schweiz. Ich habe mich auf die Entwicklung von Frontend-Webanwendungen spezialisiert. Mit Fokus auf Kreativität und Detailverliebtheit verwandle ich Ideen in fesselnde Designs.",
+  "CHARACTERISTICS": "Eigenschaften",
+  "CHARACERISTICS_TEXT": "Mitten in den Schweizer Alpen lebe ich als 19-Jähriger mit einer Vielzahl von Interessen. Von Design, Kunst und kreativen Aktivitäten über Webentwicklung und Neurologie bis hin zu Programmieren, Fechten, Skifahren und Erkundungstouren im Freien mit Freunden. Musik, insbesondere das Spielen des Hackbretts, und das Pflegen von Pflanzen sind meine geschätzten Hobbys. Leidenschaft treibt all meine Bestrebungen an.",
+  "DIE_TEXT": "Eines Tages werde ich sterben",
+  "WHAT_DRIVES_ME_TEXT": "Diese einfache Wahrheit befeuert meine Leidenschaft. Im Bewusstsein um die Kürze des Lebens bin ich bestrebt zu erleben, zu erschaffen und zu innovieren. Jeder Moment zählt, und ich bin entschlossen, das Beste aus meiner Zeit zu machen, indem ich Herausforderungen annehme und endlose Möglichkeiten erkunde.",
+  "SOCIALS": "Soziale Netzwerke",
+  "DIRECT_CONTACT": "Direkte Kontaktaufnahme",
+  "NAME_SURNAME": "Name, Nachname",
+  "SUBJECT": "Betreff",
+  "MESSAGE": "Nachricht",
+  "NAME_REQUIRED": "Name ist erforderlich",
+  "INVALID_EMAIL": "Ungültige E-Mail-Adresse",
+  "SUBJECT_REQUIRED": "Betreff ist erforderlich",
+  "MESSAGE_REQUIRED": "Nachricht ist erforderlich",
+  "CONTACT_ME_TEXT": "Egal, ob Sie eine Frage haben, Hilfe benötigen oder einfach nur plaudern möchten, zögern Sie nicht, mich zu kontaktieren. Ich bin hier, um zu helfen und freue mich darauf, von Ihnen zu hören. Ihre Ideen, Fragen und Anregungen sind immer willkommen. Ich freue mich darauf, mit Ihnen in Verbindung zu treten!",
+  "FOOTER_TEXT": "Von mir erstellt mit ReactJS und viel ♥",
+  "SEND": "Senden",
+  "BACK_TO_TOP": "Nach oben"
 }

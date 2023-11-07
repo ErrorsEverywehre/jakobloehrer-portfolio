@@ -1,27 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Navbar.scss";
 const Navbar = () => {
-  const [selectedTab, setSelectedTab] = useState("Home");
-  const [selectedLang, setSelectedLang] = useState("EN");
+  const { i18n, t } = useTranslation();
+  const [selectedTab, setSelectedTab] = useState("ABOUT");
+  const [selectedLang, setSelectedLang] = useState();
 
   const tabs = [
-    { label: "Home", id: 1 },
-    { label: "About", id: 2 },
-    { label: "Contact", id: 3 },
-    { label: "Projects", id: 4 },
+    { label: "ABOUT", id: 1 },
+    { label: "WORK", id: 2 },
+    { label: "CONTACT", id: 3 },
   ];
 
   const languages = [
-    { label: "EN", id: 5 },
-    { label: "DE", id: 6 },
+    { label: "en", id: 5 },
+    { label: "de", id: 6 },
   ];
 
-  const { i18n } = useTranslation();
-
   const changeLanguage = (lng) => {
+    localStorage.setItem("SELECTED_LANGUAGE", lng);
     i18n.changeLanguage(lng);
   };
+
+  useEffect(() => {
+    const prevSelectedLang = localStorage.getItem("SELECTED_LANGUAGE");
+    if (prevSelectedLang.length) {
+      i18n.changeLanguage(prevSelectedLang);
+      setSelectedLang(prevSelectedLang);
+    } else setSelectedLang("en");
+  }, []);
 
   return (
     <div className="navbar">
@@ -34,7 +41,7 @@ const Navbar = () => {
             }`}
             onClick={() => setSelectedTab(tab.label)}
           >
-            {tab.label}
+            {t(tab.label)}
           </div>
         ))}
       </div>
@@ -43,14 +50,14 @@ const Navbar = () => {
           <div
             onClick={() => {
               setSelectedLang(lang.label);
-              changeLanguage(lang.label.toLowerCase());
+              changeLanguage(lang.label);
             }}
             key={lang.id}
             className={`text-wrapper ${
               selectedLang === lang.label ? "bold" : ""
             }`}
           >
-            {lang.label}
+            {lang.label.toLocaleUpperCase()}
           </div>
         ))}
       </div>
