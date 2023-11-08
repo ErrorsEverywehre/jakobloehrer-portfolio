@@ -31,7 +31,7 @@ const About = () => {
           <TextBox text="WHAT_DRIVES_ME_TEXT" />
         </div>
         <div className="image-wrapper">
-          <img src={skeleton} alt="Skeleton" />
+          <img src={skeleton} alt="Skeleton with Butterfly" />
         </div>
       </div>
     </div>

@@ -1,0 +1,51 @@
+:root {
+  .contact {
+    position: relative;
+
+    height: auto;
+    .textBox-wrapper {
+      width: 360px;
+      margin: var(--space) 0;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .left-wrapper {
+        width: 360px;
+      }
+      .right-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 360px;
+        gap: var(--space-big);
+
+        .socials-wrapper {
+          .socials-icons {
+            align-items: center;
+            font-size: 18px;
+            gap: var(--space);
+          }
+        }
+        .directContact-wrapper {
+          .icon-wrapper {
+            align-items: center;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .image-wrapper {
+      position: absolute;
+      top: 3%;
+      right: -15%;
+      width: 160px;
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
