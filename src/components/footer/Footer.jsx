@@ -5,10 +5,18 @@ import "./Footer.scss";
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="footer">
       <p className="div">{t("FOOTER_TEXT")}</p>
-      <Button icon={<MdArrowUpward />} text="BACK_TO_TOP" />
+      <Button
+        onClick={scrollToTop}
+        icon={<MdArrowUpward />}
+        text="BACK_TO_TOP"
+      />
     </div>
   );
 };
