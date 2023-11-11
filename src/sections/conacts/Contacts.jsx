@@ -16,9 +16,9 @@ const Contacts = () => {
   const { t } = useTranslation();
   return (
     <div className="contact">
-      <SectionTitle title="CONTACT" />
+      <SectionTitle title={t("CONTACT")} />
       <div className="textBox-wrapper">
-        <TextBox text="CONTACT_ME_TEXT" />
+        <TextBox text={t("CONTACT_ME_TEXT")} />
       </div>
       <div className="content-wrapper">
         <div className="left-wrapper">
@@ -27,26 +27,26 @@ const Contacts = () => {
           </div>
         </div>
         <div className="right-wrapper">
-          <div className="socials">
-            <div className="socials-title">{t("SOCIALS")}</div>
-            <div className="socials-icons">
-              <AiOutlineInstagram />
-              <AiFillLinkedin />
-              <AiFillGithub />
-            </div>
-          </div>
           <div className="directContact">
             <div className="directContact-title">{t("DIRECT_CONTACT")}</div>
-            <div className="socials-icons">
+            <div className="contact-info">
               <div className="mail-wrapper">
                 <AiOutlineMail />
-                <a href="jakob.loehrer@outlook.com">
+                <a href="mailto:jakob.loehrer@outlook.com">
                   jakob.loehrer@outlook.com
                 </a>
               </div>
               <div className="tel-wrapper">
                 <AiFillPhone /> 0792514968
               </div>
+            </div>
+          </div>
+          <div className="socials">
+            <div className="socials-title">{t("SOCIALS")}</div>
+            <div className="socials-icons">
+              <AiOutlineInstagram />
+              <AiFillLinkedin />
+              <AiFillGithub />
             </div>
           </div>
         </div>
