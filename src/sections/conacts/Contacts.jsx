@@ -12,11 +12,13 @@ import ContactForm from "../../components/contactForm/ContactForm";
 import skeletonStanding from "./../../assets/skeletonStanding.png";
 import "./Contacts.scss";
 
-const Contacts = () => {
+const Contacts = ({forwardedRef}) => {
   const { t } = useTranslation();
   return (
     <div className="contact">
       <SectionTitle title={t("CONTACT")} />
+    <div ref={forwardedRef} className="contact">
+      <SectionTitle title="CONTACT" />
       <div className="textBox-wrapper">
         <TextBox text={t("CONTACT_ME_TEXT")} />
       </div>

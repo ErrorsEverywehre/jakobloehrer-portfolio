@@ -2,10 +2,10 @@ import { useTranslation } from "react-i18next";
 import skeleton from "./../../assets/skeletonButterfly.png";
 import TextBox from "./../../common/textBox/TextBox";
 import "./About.scss";
-const About = () => {
+const About = ({forwardedRef}) => {
   const { t } = useTranslation();
   return (
-    <div className="about">
+    <div rref={forwardedRef}  className="about">
       <div className="left-wrapper">
         <div className="portrait"></div>
 
