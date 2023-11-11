@@ -1,9 +1,9 @@
 import SectionTitle from "../../common/sectionTitle/SectionTitle";
 import "./Work.scss";
 
-const Work = () => {
+const Work = ({forwardedRef}) => {
   return (
-    <div className="work">
+    <div ref={forwardedRef} className="work">
       <SectionTitle title="WORK" />
     </div>
   );

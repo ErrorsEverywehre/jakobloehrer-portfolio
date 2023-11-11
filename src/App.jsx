@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./App.scss";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
@@ -7,13 +8,16 @@ import Contacts from "./sections/conacts/Contacts";
 import Work from "./sections/work/Work";
 
 const App = () => {
+  const aboutRef = useRef(null);
+  const workRef = useRef(null);
+  const contactRef = useRef(null);
   return (
     <>
-      <Navbar />
+      <Navbar aboutRef={aboutRef} workRef={workRef} contactRef={contactRef}/>
       <div className="section-wrapper">
-        <About />
-        <Work />
-        <Contacts />
+        <About forwardedRef={aboutRef} />
+        <Work forwardedRef={workRef} />
+        <Contacts forwardedRef={contactRef} />
       </div>
       <Footer />
     </>
