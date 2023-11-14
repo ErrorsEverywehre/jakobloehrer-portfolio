@@ -5,7 +5,7 @@ import "./About.scss";
 const About = ({forwardedRef}) => {
   const { t } = useTranslation();
   return (
-    <div rref={forwardedRef}  className="about">
+    <div ref={forwardedRef}  className="about">
       <div className="left-wrapper">
         <div className="portrait"></div>
 

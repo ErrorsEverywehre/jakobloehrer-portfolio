@@ -15,10 +15,8 @@ import "./Contacts.scss";
 const Contacts = ({forwardedRef}) => {
   const { t } = useTranslation();
   return (
-    <div className="contact">
-      <SectionTitle title={t("CONTACT")} />
     <div ref={forwardedRef} className="contact">
-      <SectionTitle title="CONTACT" />
+      <SectionTitle title={t("CONTACT")} />
       <div className="textBox-wrapper">
         <TextBox text={t("CONTACT_ME_TEXT")} />
       </div>

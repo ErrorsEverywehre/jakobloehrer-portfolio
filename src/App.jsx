@@ -12,15 +12,17 @@ const App = () => {
   const workRef = useRef(null);
   const contactRef = useRef(null);
   return (
-    <>
-      <Navbar aboutRef={aboutRef} workRef={workRef} contactRef={contactRef}/>
+
+    <div className="app">      <Navbar aboutRef={aboutRef} workRef={workRef} contactRef={contactRef}/>
       <div className="section-wrapper">
         <About forwardedRef={aboutRef} />
         <Work forwardedRef={workRef} />
         <Contacts forwardedRef={contactRef} />
       </div>
       <Footer />
-    </>
+
+    </div>
+
   );
 };
 
