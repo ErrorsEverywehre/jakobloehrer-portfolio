@@ -12,7 +12,7 @@ import ContactForm from "../../components/contactForm/ContactForm";
 import skeletonStanding from "./../../assets/skeletonStanding.png";
 import "./Contacts.scss";
 
-const Contacts = ({forwardedRef}) => {
+const Contacts = ({ forwardedRef }) => {
   const { t } = useTranslation();
   return (
     <div ref={forwardedRef} className="contact">

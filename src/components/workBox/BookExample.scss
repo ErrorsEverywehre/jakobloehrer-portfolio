@@ -1,105 +1,95 @@
 /* General */
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  background-color: #dac400;
 }
 
 /* Button */
-button {
+.nav-btn {
+  margin: 10px;
   border: none;
   background-color: transparent;
-  margin: 10px;
-  cursor: pointer;
   transition: transform 0.5s;
-}
+  cursor: pointer;
 
-button:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-button:hover i {
-  color: rgb(102, 102, 102);
-}
+  &:hover i {
+    color: rgb(102, 102, 102);
+  }
 
-i {
-  color: gray;
-  font-size: 4em;
+  i {
+    color: gray;
+    font-size: 4em;
+  }
 }
 
 /* Book */
 .book {
+  position: relative;
   width: 350px;
   height: 500px;
-  position: relative;
   transition: transform 0.5s;
 }
 
 .paper {
-  height: 100%;
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   perspective: 1500px;
-}
 
-.front {
-  backface-visibility: hidden;
-  border-left: 3px solid #dac400;
-}
+  .front {
+    backface-visibility: hidden;
+    border-left: 3px solid #dac400;
+  }
 
-.front,
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  transform-origin: left;
-  transition: transform 0.5s;
-}
+  .front,
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.5s;
+    transform-origin: left;
+  }
 
-.front {
-  z-index: 1;
-}
+  .front {
+    z-index: 1;
+  }
 
-.back {
-  z-index: 0;
-}
+  .back {
+    z-index: 0;
+  }
 
-.front-content,
-.back-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .front-content,
+  .back-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 
-.back-content {
-  transform: rotateY(180deg)
-}
+  .back-content {
+    transform: rotateY(180deg);
+  }
 
-/* Paper Flipped */
-.flipped .front,
-.flipped .back {
-  transform: rotateY(-180deg)
+  /* Paper Flipped */
+  &.flipped {
+    .front,
+    .back {
+      transform: rotateY(-180deg);
+    }
+  }
 }
 
 /* Paper Z-index */
@@ -115,34 +105,44 @@ i {
   z-index: 1;
 }
 
-/* Customization */
+#p1.flipped {
+  z-index: 1;
+}
 
+#p2.flipped {
+  z-index: 2;
+}
+
+#p3.flipped {
+  z-index: 3;
+}
+
+/* Customization */
 .book-title {
-  font-size: 3em;
   margin-bottom: 40px;
+  font-size: 3em;
 }
 
 .cover-img {
   width: 200px;
   height: 270px;
-  object-fit: cover;
   border-radius: 30px;
+  object-fit: cover;
 }
 
 #b1 {
-  padding: 20px;
-  text-align: center;
-  font-size: 1.2em;
   justify-content: space-around;
-}
+  padding: 20px;
+  font-size: 1.2em;
+  text-align: center;
 
-#b1 h2 {
-  font-size: 2em;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
 
-#b1 p {
-  margin-bottom: 20px;
+  p {
+    margin-bottom: 20px;
+  }
 }
-

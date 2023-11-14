@@ -1,13 +1,14 @@
 import { useState } from "react";
-import BookExample from "./BookExample";
-import "./WorkBox.scss";
+// import "./WorkBox.scss";
+import BookExample from "./BookExample.jsx";
 
 const WorkBoxContent = [
   {
     index: 0,
     title: "Fechtclub Oberwallis",
     description: "I did some work there",
-    image: "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
     jsx: <div>Something</div>,
     imageDescription: "This is the logo",
   },
@@ -15,7 +16,8 @@ const WorkBoxContent = [
     index: 1,
     title: "Another Fechtclub",
     description: "I did some work here too",
-    image: "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
     jsx: <div>Something else</div>,
     imageDescription: "This is another logo",
   },
@@ -23,7 +25,8 @@ const WorkBoxContent = [
     index: 2,
     title: "Another Fechtclub",
     description: "I did some work here too",
-    image: "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
     jsx: <div>Something else</div>,
     imageDescription: "This is another logo",
   },
@@ -37,14 +40,17 @@ const WorkBox = () => {
   };
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + WorkBoxContent.length) % WorkBoxContent.length);
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + WorkBoxContent.length) % WorkBoxContent.length
+    );
   };
 
   const currentContent = WorkBoxContent[currentIndex];
 
   return (
     <>
-    <BookExample />
+      <BookExample />
       {/* <div className="workBoxControls">
         <button onClick={handlePrevClick} disabled={currentIndex === 0}>
           <AiOutlineLeft />
