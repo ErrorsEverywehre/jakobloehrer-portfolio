@@ -64,50 +64,50 @@ const BookExample = () => {
 
   return (
     <div>
-      <button id="prev-btn" onClick={goPrevious}>
+      <button className="nav-btn" onClick={goPrevious}>
         left{" "}
       </button>
 
-      <div id="book" className="book">
-        <div id="p1" className={`paper ${page1Flipped && "flipped"}`}>
+      <div className="book">
+        <div className={`paper ${page1Flipped && "flipped"} p1`}>
           <div className="front">
-            <div id="f1" className="front-content">
+            <div className="front-content">
               <h1>Front 1</h1>
             </div>
           </div>
           <div className="back">
-            <div id="b1" className="back-content">
+            <div className="back-content b1">
               <h1>Back 1</h1>
             </div>
           </div>
         </div>
-        <div id="p2" className={`paper ${page2Flipped  && "flipped"}`}>
+        <div className={`paper ${page2Flipped && "flipped"} p2`}>
           <div className="front">
-            <div id="f2" className="front-content">
+            <div className="front-content">
               <h1>Front 2</h1>
             </div>
           </div>
           <div className="back">
-            <div id="b2" className="back-content">
+            <div className="back-content b2">
               <h1>Back 2</h1>
             </div>
           </div>
         </div>
-        <div id="p3" className={`paper ${page3Flipped && "flipped"}`}>
+        <div className={`paper ${page3Flipped && "flipped"} p3`}>
           <div className="front">
-            <div id="f3" className="front-content">
+            <div className="front-content">
               <h1>Front 3</h1>
             </div>
           </div>
           <div className="back">
-            <div id="b3" className="back-content">
+            <div className="back-content b3">
               <h1>Back 3</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <button id="next-btn" onClick={goNext}>
+      <button className="nav-btn" onClick={goNext}>
         right{" "}
       </button>
     </div>
