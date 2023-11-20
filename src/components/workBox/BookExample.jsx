@@ -1,15 +1,79 @@
 import { useEffect, useState } from "react";
 import "./BookExample.scss";
 
+const WorkBoxContent = [
+  {
+    index: 0,
+    title: "Fechtclub Oberwallis",
+    description: "I did some work there",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something</div>,
+    imageDescription: "This is the logo",
+  },
+  {
+    index: 1,
+    title: "Another Fechtclub",
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+  {
+    index: 2,
+    title: "Third Fechtclub",1    b 
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+  {
+    index: 3,
+    title: "Fourth",
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+  {
+    index: 3,
+    title: "Fourth",
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+  {
+    index: 3,
+    title: "Fourth",
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+  {
+    index: 3,
+    title: "Fourth",
+    description: "I did some work here too",
+    image:
+      "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    jsx: <div>Something else</div>,
+    imageDescription: "This is another logo",
+  },
+];
+
+
 const BookExample = () => {
   const [currentState, setCurrentState] = useState(1);
-  const [page1Flipped, setPage1Flipped] = useState(false);
-  const [page2Flipped, setPage2Flipped] = useState(false);
-  const [page3Flipped, setPage3Flipped] = useState(false);
-  const [bookOpened, setBookOpenend] = useState(false);
+  const [bookOpened, setBookOpened] = useState(false);
   const [atStart, setAtStart] = useState(false);
 
-  const numOfPapers = 3;
+  const numOfPapers = Math.ceil(WorkBoxContent.length / 2);
   const maxState = numOfPapers + 1;
 
   const goNext = () => {
@@ -24,82 +88,60 @@ const BookExample = () => {
     }
   };
 
-  useEffect(() => {
-    switch (currentState) {
-      case 1:
-        setPage1Flipped(false);
-        setPage2Flipped(false);
-        setPage3Flipped(false);
-        setBookOpenend(false);
-        break;
-      case 2:
-        setBookOpenend(true);
-        setAtStart(true);
-        setPage1Flipped(true);
-        setPage2Flipped(false);
-        setPage3Flipped(false);
-        break;
-      case 3:
-        setPage2Flipped(true);
-        setPage3Flipped(false);
-        break;
-      case 4:
-        setPage3Flipped(true);
-        setBookOpenend(false);
-        break;
-      default:
-        break;
-    }
-  }, [currentState]);
+  const generateBook = (workBoxContent) => {
+    let pageCounter = 0;
+    let jsx = [];
 
-  return (
-    <div>
-      <button className="nav-btn" onClick={goPrevious}>
-        left{" "}
-      </button>
-      <div className="book-wrapper">
-        <div className={`book ${bookOpened ? "open" : "closed"}  ${atStart && "beginning"}`}>
-          <div className={`paper ${page1Flipped && "flipped"} p1`}>
-            <div className="front">
-              <div className="front-content">
-                <h1>Front 1</h1>
-              </div>
-            </div>
-            <div className="back">
-              <div className="back-content b1">
-                <h1>Back 1</h1>
-              </div>
-            </div>
+    for (let i = 0; i < workBoxContent.length; i += 2) {
+      pageCounter++;
+
+      jsx.push(
+        <div
+        key={pageCounter}
+        className={`paper p${pageCounter} ${currentState > pageCounter ? "flipped" : ""}`}
+        style={{ zIndex: currentState > pageCounter ? pageCounter : numOfPapers - pageCounter }}
+      >
+        <div className="front">
+          <div className="front-content">
+            <h1>{workBoxContent[i].title}</h1>
+            {workBoxContent[i].jsx}
           </div>
-          <div className={`paper ${page2Flipped && "flipped"} p2`}>
-            <div className="front">
-              <div className="front-content">
-                <h1>Front 2</h1>
-              </div>
-            </div>
-            <div className="back">
-              <div className="back-content b2">
-                <h1>Back 2</h1>
-              </div>
-            </div>
-          </div>
-          <div className={`paper ${page3Flipped && "flipped"} p3`}>
-            <div className="front">
-              <div className="front-content">
-                <h1>Front 3</h1>
-              </div>
-            </div>
-            <div className="back">
-              <div className="back-content b3">
-                <h1>Back 3</h1>
-              </div>
-            </div>
+        </div>
+        <div className="back">
+          <div className="back-content">
+            {workBoxContent[i + 1] && (
+              <>
+                <h1>{workBoxContent[i + 1].title}</h1>
+                {workBoxContent[i + 1].jsx}
+              </>
+            )}
           </div>
         </div>
       </div>
 
+      );
+    }
+
+    return jsx;
+  };
+
+  useEffect(() => {
+    setBookOpened(currentState > 1 && currentState < maxState);
+    setAtStart(currentState === 2);
+  }, [currentState, maxState]);
+
+  return (
+    <div>
+      <button className="nav-btn" onClick={goPrevious}>
+        left
+      </button>
+      <div className="book-wrapper">
+        <div className={`book ${bookOpened ? "open" : "closed"} ${atStart && "beginning"}`}>
+          {generateBook(WorkBoxContent)}
+        </div>
+      </div>
       <button className="nav-btn" onClick={goNext}>
-        right{" "}
+        right
       </button>
     </div>
   );

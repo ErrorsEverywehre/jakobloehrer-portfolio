@@ -15,6 +15,7 @@
     &.closed .beginning {
       transform: translateX(0%);
     }
+
     &.closed {
       transform: translateX(100%);
     }
@@ -80,28 +81,18 @@
   }
 
   /* Paper Z-index */
-  .p1 {
-    z-index: 3;
-  }
+  .p {
+    z-index: 0;
+    // &:not(:last-child) {
+    //   z-index: 1;
+    // }
 
-  .p2 {
-    z-index: 2;
-  }
-
-  .p3 {
-    z-index: 1;
-  }
-
-  .p1.flipped {
-    z-index: 1;
-  }
-
-  .p2.flipped {
-    z-index: 2;
-  }
-
-  .p3.flipped {
-    z-index: 3;
+    // &.flipped {
+    //   z-index: 0;
+    //   &:not(:last-child) {
+    //     z-index: 1;
+    //   }
+    // }
   }
 
   /* Customization */
