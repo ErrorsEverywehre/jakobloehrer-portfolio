@@ -7,8 +7,8 @@
   "ABOUT_ME": "About Me",
   "ABOUT_ME_TEXT": "Hello! I'm Jakob, a passionate Developer based in Switzerland. I specialize in Frontend Web Development. With a focus on creativity and detail, I transform ideas into captivating designs.",
   "CHARACTERISTICS": "Characteristics",
-  "CHARACERISTICS_TEXT": "Living amidst the Swiss Alps, I'm a 19-year-old with a diverse range of interests. From design, art, and creative pursuits to web development and neurology, my curiosity knows no bounds. I find joy in programming, fencing, skiing, and exploring the great outdoors with friends. Music, especially playing the Hammered Dulcimer, and nurturing plants are my cherished pastimes. Passion drives my every endeavor.",
-  "DIE_TEXT": "I'am going to die one day",
+  "CHARACERISTICS_TEXT": "At home in the Swiss Alps, I'm a 19-year-old with a passion for design, web development, neurology, and music. My hobbies include programming, fencing, skiing, spending quality time with friends, music, and my love for plants.",
+  "DIE_TEXT": "I'am going to die one day!",
   "WHAT_DRIVES_ME_TEXT": "This simple truth fuels my passion. Aware of life's brevity, I'm driven to experience, create, and innovate. Every moment matters, and I'm committed to making the most of my time by embracing challenges and exploring endless possibilities.",
   "SOCIALS": "Socials",
   "DIRECT_CONTACT": "Direct contact",
@@ -19,8 +19,7 @@
   "INVALID_EMAIL": "Invalid email address",
   "SUBJECT_REQUIRED": "Subject is required",
   "MESSAGE_REQUIRED": "Message is required",
-
-  "CONTACT_ME_TEXT": "Whether you have a question, need assistance, or just want to chat, don't hesitate to contact me. I'm here to help and eager to hear from you. Your ideas, questions, and feedback are always welcome. Looking forward to connecting!",
+  "CONTACT_ME_TEXT": "Whether you have a question, need assistance, or just want to chat – feel free to reach out to me. I am available and look forward to hearing from you. Ideas, questions, and suggestions are always welcome. Talk to you soon!",
   "FOOTER_TEXT": "Made by me with ReactJS and much ♥",
   "SEND": "Send",
   "BACK_TO_TOP": "Back to top"
