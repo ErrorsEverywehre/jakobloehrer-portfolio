@@ -1,0 +1,12 @@
+() work : fill in content
+() contacts : enhance styling (image, order, ... )
+() contacts : link links & make extern platforms good
+() contacts : brute force protection
+() glob : correct texts --> make better
+() glob : make responsive
+() publish app ...
+() ask feedback & imporve
+() work : more page
+() api stuff?
+() galery, projects, other stuff
+()
