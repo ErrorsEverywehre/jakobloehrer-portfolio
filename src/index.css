@@ -55,14 +55,14 @@ h1 {
 }
 
 button {
-  padding: 0.6em 1.2em;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background-color: #1a1a1a;
+  padding: var(--space-small);
+  border: 1px solid var(--secondary);
+  background-color: var(--accent);
+  color: var(--secondary);
   font-family: inherit;
   font-size: 1em;
   font-weight: 500;
-  transition: border-color 0.25s;
+  /* transition: border-color 0.25s; */
   cursor: pointer;
 }
 button:hover {

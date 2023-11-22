@@ -1,0 +1,58 @@
+[
+  {
+    "index": 0,
+    "title": "Fechtclub Oberwallis",
+    "description": "I did some work there",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something</div>",
+    "imageDescription": "This is the logo"
+  },
+  {
+    "index": 1,
+    "title": "Another Fechtclub",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  },
+  {
+    "index": 2,
+    "title": "Third Fechtclub",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  },
+  {
+    "index": 3,
+    "title": "Fourth",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  },
+  {
+    "index": 4,
+    "title": "Fourth",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  },
+  {
+    "index": 5,
+    "title": "Fourth",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  },
+  {
+    "index": 6,
+    "title": "Fourth",
+    "description": "I did some work here too",
+    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
+    "jsx": "<div>Something else</div>",
+    "imageDescription": "This is another logo"
+  }
+]
