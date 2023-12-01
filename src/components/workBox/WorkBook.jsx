@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlineInstagram, AiOutlineLeft, AiOutlineLink, AiOutlineRight } from "react-icons/ai";
+import SectionTitle from "../../common/sectionTitle/SectionTitle";
+import TextBox from "../../common/textBox/TextBox";
 import Work from "./../../assets/Work.json";
+
 import "./WorkBook.scss";
 
 
@@ -43,19 +46,55 @@ const WorkBook = () => {
       >
         <div className="front">
           <div className="front-content">
-            <button onClick={goNext}></button>
-            <h1>{workBoxContent[i].title}</h1>
-            {workBoxContent[i].jsx}
+            {/* <button onClick={goNext}></button> */}
+            <SectionTitle title=" - " />
+            <iframe src={workBoxContent[i - 1]?.iframe} />
+            <label>{workBoxContent[i - 1]?.iframeDescription}</label>
           </div>
         </div>
         <div className="back">
           <div className="back-content">
-          <button onClick={goPrevious}></button>
+          {/* <button onClick={goPrevious}></button> */}
 
             {workBoxContent[i + 1] && (
               <>
-                <h1>{workBoxContent[i + 1].title}</h1>
-                {workBoxContent[i + 1].jsx}
+              <SectionTitle title={workBoxContent[i+1].title} />
+                <TextBox text={workBoxContent[i+1].description} />
+                <TextBox title="WORK" />
+                {workBoxContent[i + 1]?.work?.map((work) => (
+                  <div key={work.type} className="workContainer">
+  {work.type === "graphics" && (
+    <>
+      <AiOutlineDownload />
+      <b>Graphics</b>
+      {work.links.map((link) => (
+        <a href={link.src} key={link.title}>{link.title}</a>
+      ))}
+    </>
+  )}
+  {work.type === "socials" && (
+    <>
+      <AiOutlineInstagram />
+      <b>Socials</b>
+      {work.links.map((link) => (
+        <a href={link.src} key={link.title}>{link.title}</a>
+      ))}
+    </>
+  )}
+  {work.type === "link" && (
+    <>
+      <AiOutlineLink />
+      <b>Links</b>
+      {work.links.map((link) => (
+        <a href={link.src} key={link.title}>{link.title}</a>
+      ))}
+    </>
+  )}
+</div>
+
+))}
+
+
               </>
             )}
           </div>

@@ -16,6 +16,7 @@ const ContactForm = () => {
   const [emailError, setEmailError] = useState("");
   const [subjectError, setSubjectError] = useState("");
   const [messageError, setMessageError] = useState("");
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const emailRegex = new RegExp(
     /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -80,11 +81,18 @@ const ContactForm = () => {
         .catch((error) => {
           console.log(error.text);
         });
+
+        setTimeout(() => {
+          setFormSubmitted(true);
+        }, 3000);
     }
   };
 
   return (
     <div className="contactForm">
+           {formSubmitted ? (
+        <p>Thank you for your submission!</p>
+      ) : (
       <div className="inputs-wrapper">
         <div className={`name-input input-wrapper ${nameError ? "error" : ""}`}>
           <div className="input-description">{t("NAME_SURNAME")}:</div>
@@ -147,7 +155,7 @@ const ContactForm = () => {
         <div className="button-wrapper">
           <Button onClick={submitForm} text="SEND" icon={<AiOutlineSend />} />
         </div>
-      </div>
+      </div> )}
     </div>
   );
 };

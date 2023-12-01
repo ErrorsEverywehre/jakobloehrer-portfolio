@@ -1,58 +1,61 @@
 [
   {
-    "index": 0,
-    "title": "Fechtclub Oberwallis",
-    "description": "I did some work there",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something</div>",
-    "imageDescription": "This is the logo"
-  },
-  {
     "index": 1,
-    "title": "Another Fechtclub",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
+    "title": "Fechtclub Oberwallis",
+    "description": "Als PR-Verantwortlicher des Fechtclubs Oberwallis habe ich nicht nur die Webseite entwickelt, sondern auch verschiedene Flyer, Fotos und andere Grafiken erstellt.",
+    "iframe": "https://fechtclub-oberwallis.clubdesk.com/",
+    "iframeDescription": "Website Fechtclub Oberwallis",
+    "work": [
+      {
+        "type": "graphics",
+        "links": [
+          { "type": "link", "src": "www.google.com", "title": "Flyer Fechtclub Oberwallis" },
+          { "type": "link", "src": "www.google.com", "title": "Logo Fechtclub Oberwallis" }
+        ]
+      },
+      {
+        "type": "socials",
+        "links": [
+          { "type": "link", "src": "https://www.instagram.com/fechtclub_oberwallis/", "title": "Instagram Fechtclub Oberwallis" }
+        ]
+      }
+    ]
   },
   {
     "index": 2,
-    "title": "Third Fechtclub",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
+    "title": "Bietschicheer",
+    "description": "Als Mitglied des Marketing Teams des Bietschicheers, ein Fest im Sommer 2023, war ich für Websiten, Grafiken und mehr zuständig.",
+    "image": "https://loehrerjakob.wixsite.com/bietschicheer",
+    "iframeDescription": "Website  Bietschicheer",
+    "work": [
+      {
+        "type": "link",
+        "links": [
+          { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" }
+        ]
+      },
+      {
+        "type": "socials",
+        "links": [
+          { "type": "link", "src": "https://www.instagram.com/bietschicheer/", "title": "Instagram Fechtclub Oberwallis" }
+        ]
+      }
+    ]
   },
   {
     "index": 3,
-    "title": "Fourth",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
-  },
-  {
-    "index": 4,
-    "title": "Fourth",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
-  },
-  {
-    "index": 5,
-    "title": "Fourth",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
-  },
-  {
-    "index": 6,
-    "title": "Fourth",
-    "description": "I did some work here too",
-    "image": "https://fechtclub-oberwallis.clubdesk.ch/clubdesk/fileservlet?type=image&inline=true&id=1000073",
-    "jsx": "<div>Something else</div>",
-    "imageDescription": "This is another logo"
+    "title": "Jubla Raron",
+    "description": "Als Mitglied der Jubla Raron enwerfe ich regelmässig Flyer. Ausserdem bin ich für die Vereinswebseite verantwortlich.",
+    "iframe": "https://www.jublararon.ch/",
+    "iframeDescription": "This is another logo",
+    "work": [
+      {
+        "type": "download",
+        "links": [
+          { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" },
+          { "type": "link", "src": "https://www.instagram.com/bietschicheer/", "title": "Instagram Fechtclub Oberwallis" }
+        ]
+      }
+    ]
   }
 ]
