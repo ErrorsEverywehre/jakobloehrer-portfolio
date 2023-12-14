@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./App.scss";
+import IframeModal from "./common/iframeModal/IframeModal";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import "./i18n";
@@ -13,10 +14,12 @@ const App = () => {
   const contactRef = useRef(null);
   return (
     <div className="app">
-      {" "}
+
       <Navbar aboutRef={aboutRef} workRef={workRef} contactRef={contactRef} />
       <div className="section-wrapper">
         <About forwardedRef={aboutRef} />
+        <IframeModal url="https://semaphoreci.com/blog/react-portals" />
+
         <Work forwardedRef={workRef} />
         <Contacts forwardedRef={contactRef} />
       </div>

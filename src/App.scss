@@ -1,11 +1,20 @@
 :root {
-
-  .section-wrapper {
+  .app {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 872px;
-    margin: var(--space-biggest) auto;
-    gap: var(--space-biggest);
-  }
+    width: 90vw;
+    min-width: 320px;
+    height: 95vh;
+    margin: auto;
+    margin-top: 5vh;
+
+    .section-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 872px;
+      margin: var(--space-biggest) auto;
+      gap: var(--space-biggest);
+    }
+}
 }

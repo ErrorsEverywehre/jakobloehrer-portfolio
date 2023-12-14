@@ -6,7 +6,7 @@ const SectionTitle = ({ title }) => {
 
   return (
     <div className="sectionTitle">
-      <div className="text">{t(title)}</div> {/* Translate the title */}
+      <div className="text">{t(title) }</div>
     </div>
   );
 };
