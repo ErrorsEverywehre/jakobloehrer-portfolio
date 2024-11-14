@@ -3,8 +3,6 @@
     "index": 1,
     "title": "Fechtclub Oberwallis",
     "description": "Als PR-Verantwortlicher des Fechtclubs Oberwallis habe ich nicht nur die Webseite entwickelt, sondern auch verschiedene Flyer, Fotos und andere Grafiken erstellt.",
-    "iframe": "https://fechtclub-oberwallis.clubdesk.com/",
-    "iframeDescription": "Website Fechtclub Oberwallis",
     "work": [
       {
         "type": "graphics",
@@ -18,6 +16,12 @@
         "links": [
           { "type": "link", "src": "https://www.instagram.com/fechtclub_oberwallis/", "title": "Instagram Fechtclub Oberwallis" }
         ]
+      },
+      {
+        "type": "link",
+        "links": [
+          { "type": "link", "src": "https://fechtclub-oberwallis.clubdesk.com/", "title": "Website Fechtclub Oberwallis" }
+        ]
       }
     ]
   },
@@ -25,13 +29,12 @@
     "index": 2,
     "title": "Bietschicheer",
     "description": "Als Mitglied des Marketing Teams des Bietschicheers, ein Fest im Sommer 2023, war ich für Websiten, Grafiken und mehr zuständig.",
-    "iframe": "https://loehrerjakob.wixsite.com/bietschicheer",
-    "iframeDescription": "Website  Bietschicheer",
     "work": [
       {
         "type": "link",
         "links": [
-          { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" }
+          { "type": "link", "src": "https://loehrerjakob.wixsite.com/bietschicheer/", "title": "Website Bietschicheer" }
+        ,  { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" }
         ]
       },
       {
@@ -55,7 +58,14 @@
           { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" },
           { "type": "link", "src": "https://www.instagram.com/bietschicheer/", "title": "Instagram Fechtclub Oberwallis" }
         ]
+      }, 
+      {
+        "type": "link",
+        "links": [
+          { "type": "link", "src": "https://www.jublararon.ch/", "title": "Website Bietschicheer" }
+        ]
       }
+
     ]
   }
 ]

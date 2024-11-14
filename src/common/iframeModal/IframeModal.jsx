@@ -26,7 +26,7 @@ const IframeModal = ({ url, title }) => {
   return (
     <>
       <button onClick={toggleModal} className="btn-open">
-        Open
+        {title}
       </button>
 
       {open &&

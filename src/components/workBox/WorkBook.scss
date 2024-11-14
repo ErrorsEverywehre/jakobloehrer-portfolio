@@ -48,6 +48,11 @@
       transition: transform 0.5s;
       transform-origin: left;
       padding: var(--space);
+
+      .workContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     .front {

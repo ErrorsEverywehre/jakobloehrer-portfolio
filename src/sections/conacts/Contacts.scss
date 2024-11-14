@@ -4,18 +4,18 @@
     height: auto;
 
     .textBox-wrapper {
-      width: 360px;
-      margin: var(--space) 0;
+      width: 100%;
+      margin: var(--space-biggest) 0;
     }
 
     .content-wrapper {
       display: flex;
+      gap: var(--space-biggest);
       flex-direction: row;
-      justify-content: space-between;
 
       .left-wrapper,
       .right-wrapper {
-        width: 360px;
+        width: 100%;
       }
 
       .right-wrapper {
@@ -33,6 +33,9 @@
             align-items: center;
             font-size: 24px;
             gap: var(--space);
+            a {
+              color: var(--secondary)
+            }
           }
           .contact-info {
             display: flex;

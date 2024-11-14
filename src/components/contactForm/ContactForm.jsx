@@ -88,6 +88,16 @@ const ContactForm = () => {
     }
   };
 
+
+  const handleTextAreaChange = (e) => {
+    const target = e.target;
+    setMessage(target.value);
+
+    // Adjust the height of the text area to fit the content
+    target.style.height = "auto"; // Reset height
+    target.style.height = `${target.scrollHeight}px`; // Set it to the scroll height
+  };
+
   return (
     <div className="contactForm">
            {formSubmitted ? (
@@ -147,7 +157,7 @@ const ContactForm = () => {
             <textarea
               className="message-input"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={handleTextAreaChange}
             />
           </div>
         </div>

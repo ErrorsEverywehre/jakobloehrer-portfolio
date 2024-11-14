@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer">
       <p className="div">{t("FOOTER_TEXT")}</p>
       <Button
-        onClick={scrollToTop}
+        onClick={() => scrollToTop()}
         icon={<MdArrowUpward />}
         text="BACK_TO_TOP"
       />
