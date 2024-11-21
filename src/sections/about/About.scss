@@ -2,7 +2,7 @@
   .about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     position: relative;
     width: 100%;
     gap: var(--space-biggest);
@@ -10,12 +10,12 @@
     .left-wrapper {
       display: flex;
       flex-direction: column;
-      width: 360px;
+      max-width: 360px;
       height: 100%;
 
       gap: var(--space-biggest);
       .portrait {
-        width: 100%;
+        max-width: 100%;
         height: 350px;
         border: 2px solid var(--secondary);
         background-color: #e2e2e2;
@@ -28,7 +28,7 @@
     .right-wrapper {
       display: flex;
       flex-direction: column;
-      width: 360px;
+      max-width: 360px;
 
       height: 100%;
       gap: var(--space-biggest);
@@ -38,7 +38,7 @@
         justify-content: center;
         align-items: center;
         height: 350px;
-        margin: auto;
+        // margin: auto;
         width: 100%;
 
         .box {

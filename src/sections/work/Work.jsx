@@ -6,8 +6,10 @@ const Work = ({forwardedRef}) => {
   return (
     <div ref={forwardedRef} className="work">
       <SectionTitle title="WORK" />
-      <WorkBook />
+      {/* <WorkBook /> */}
+      work ...
     </div>
   );
 };
 export default Work;
+
