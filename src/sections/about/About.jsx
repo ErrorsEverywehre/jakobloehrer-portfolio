@@ -14,15 +14,11 @@ const About = ({forwardedRef}) => {
       </div>
       <div className="right-wrapper">
         <div className="title">
-          <div className="box">
-            <div className="group">
               <div className="overlap-group">
                 <div className="text-wrapper">{t("HELLO_IM")}</div>
-                <div className="text-wrapper-2">{t("AND_IM_A")}</div>
-                <div className="text-wrapper-3">Jakob Löhrer</div>
+                <div className="text-wrapper-2">Jakob Löhrer</div>
+                <div className="text-wrapper-3">{t("AND_IM_A")}</div>
                 <div className="text-wrapper-4">Frontend Developer</div>
-              </div>
-            </div>
           </div>
         </div>
 

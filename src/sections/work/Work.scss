@@ -1,2 +1,10 @@
 :root {
+
+  .projects-list{
+    padding-top: var(--space-biggest)  ;
+    display: flex;
+    gap: var(--space-biggest);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

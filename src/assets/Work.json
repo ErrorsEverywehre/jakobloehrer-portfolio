@@ -48,7 +48,7 @@
   {
     "index": 3,
     "title": "Jubla Raron",
-    "description": "Als Mitglied der Jubla Raron enwerfe ich regelmässig Flyer. Ausserdem bin ich für die Vereinswebseite verantwortlich.",
+    "description": "Als Schaarleiter der Jubla Raron enwerfe ich regelmässig Flyer. Ausserdem bin ich für die Vereinswebseite verantwortlich.",
     "iframe": "https://www.jublararon.ch/",
     "iframeDescription": "This is another logo",
     "work": [
@@ -58,7 +58,7 @@
           { "type": "link", "src": "https://raglet.github.io/Bietschicheer/", "title": "Bietschicheer Map" },
           { "type": "link", "src": "https://www.instagram.com/bietschicheer/", "title": "Instagram Fechtclub Oberwallis" }
         ]
-      }, 
+      },
       {
         "type": "link",
         "links": [

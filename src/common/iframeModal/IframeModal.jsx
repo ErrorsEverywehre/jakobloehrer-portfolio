@@ -33,28 +33,26 @@ const IframeModal = ({ url, title }) => {
         ReactDOM.createPortal(
           <>
             <div onClick={toggleModal} className="overlay"></div>
-
             <div className="modal">
-            <div className="modal-wrapper">
-  <div className="modal-header">
-   <h2>{title} </h2>
-    <button className="close-button" onClick={toggleModal}>
-      <AiOutlineClose />
-    </button>
-  </div>
-  <div className="modal-content">
-    <div className="redirect-wrapper">
-  <Button
-      className="redirect-button"
-      text="Visit Site"
-      icon={<AiOutlineExport />}
-      onClick={openLink}
-    />
-    </div>
-    <iframe src={url} />
-  </div>
-</div>
-
+              <div className="modal-wrapper">
+                <div className="modal-header">
+                  <h2>{title} </h2>
+                  <button className="close-button" onClick={toggleModal}>
+                    <AiOutlineClose />
+                  </button>
+                </div>
+                <div className="modal-content">
+                  <div className="redirect-wrapper">
+                    <Button
+                      className="redirect-button"
+                      text="Visit Site"
+                      icon={<AiOutlineExport />}
+                      onClick={openLink}
+                    />
+                  </div>
+                  <iframe src={url} />
+                </div>
+              </div>
             </div>
           </>,
           modalRoot

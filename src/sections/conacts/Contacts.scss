@@ -10,7 +10,7 @@
 
     .content-wrapper {
       display: flex;
-      gap: var(--space-biggest);
+      gap: var(--space-huge);
       flex-direction: row;
 
       @media only screen and (max-width: 600px){

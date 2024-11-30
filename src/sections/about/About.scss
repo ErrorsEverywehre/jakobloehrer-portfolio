@@ -1,3 +1,6 @@
+@import './../../common/styles/_breakpoints';
+
+
 :root {
   .about {
     display: flex;
@@ -5,14 +8,13 @@
     // justify-content: space-between;
     position: relative;
     width: 100%;
-    gap: var(--space-biggest);
+    gap: var(--space-huge);
 
     .left-wrapper {
       display: flex;
       flex-direction: column;
       max-width: 360px;
       height: 100%;
-
       gap: var(--space-biggest);
       .portrait {
         max-width: 100%;
@@ -41,20 +43,11 @@
         // margin: auto;
         width: 100%;
 
-        .box {
-          width: 393px;
-          height: 120px;
-
-          .group {
-            position: relative;
-            width: 393px;
-            height: 120px;
-
             .overlap-group {
               position: relative;
-              width: 393px;
+              width: 100%;
               height: 120px;
-
+d
               .text-wrapper {
                 position: absolute;
                 top: 0;
@@ -69,24 +62,24 @@
 
               .text-wrapper-2 {
                 position: absolute;
-                top: 65px;
-                left: 185px;
-                width: 208px;
-                color: var(--black);
-                font-size: 15px;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0;
-              }
-
-              .text-wrapper-3 {
-                position: absolute;
                 top: 27px;
                 left: 99px;
                 width: 208px;
                 color: var(--black);
                 font-size: 36px;
                 font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0;
+              }
+
+              .text-wrapper-3 {
+                position: absolute;
+                top: 65px;
+                left: 185px;
+                width: 208px;
+                color: var(--black);
+                font-size: 15px;
+                font-weight: 400;
                 line-height: normal;
                 letter-spacing: 0;
               }
@@ -103,9 +96,60 @@
                 white-space: nowrap;
               }
             }
+
+        @include breakpoint {
+          .overlap-group{
+            .text-wrapper {
+              font-size: 2vw ;
+              left: 20%;
+              top: 0%;
+            }
+            .text-wrapper-2 {
+              font-size: 4.8vw ;
+              left: 25%;
+              top: 20%;
+            }
+            .text-wrapper-3 {
+              font-size: 3vw ;
+              left: 15%;
+              top: 60%
+            }
+
+            .text-wrapper-4 {
+              font-size: 5.2vw ;
+              left: 0%;
+              top: 85%
+            }
+          }
+        }
+
+        @media screen and (max-width: 510px) {
+          .overlap-group{
+            .text-wrapper {
+              font-size: 3vw ;
+              left: 20%;
+              top: 0%;
+            }
+            .text-wrapper-2 {
+              font-size: 6vw ;
+              left: 20%;
+              top: 20%;
+            }
+            .text-wrapper-3 {
+              font-size: 3.8vw ;
+              left: 10%;
+              top: 60%
+            }
+
+            .text-wrapper-4 {
+              font-size: 4.8vw ;
+              left: 0%;
+              top: 85%
+            }
           }
         }
       }
+
 
       .whatDrivesMe-wrapper {
         .dieText {

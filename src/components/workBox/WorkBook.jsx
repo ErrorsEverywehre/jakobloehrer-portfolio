@@ -124,8 +124,8 @@ const WorkBook = () => {
                             <ul>
                               {work.links.map((link) => (
                                 <li>
-                           
-                              
+
+
                                   <IframeModal url={link.src} title={link.title}  />
 
                                 </li>

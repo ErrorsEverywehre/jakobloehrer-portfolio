@@ -1,0 +1,33 @@
+.card {
+  height: 232px;
+  width: 232px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--secondary);
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .title-wrapper {
+    position: flex-end;
+    background-color: var(--secondary);
+    color: var(--accent);
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    border: 2px solid var(--accent);
+
+    .title-wrapper {
+      background-color: var(--accent);
+      color: var(--secondary);
+    }
+  }
+
+
+}
