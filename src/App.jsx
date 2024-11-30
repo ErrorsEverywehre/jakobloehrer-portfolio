@@ -16,7 +16,6 @@ const App = () => {
   const contactRef = useRef(null);
 
   const location = useLocation();
-
   useEffect(() => {
     if (location.state?.scrollToWork) {
       workRef.current?.scrollIntoView({ behavior: "smooth" });
