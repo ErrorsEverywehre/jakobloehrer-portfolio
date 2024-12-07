@@ -120,7 +120,7 @@
             }
 
             .text-wrapper-4 {
-              font-size: 5.2vw ;
+              font-size: 4vw ;
               left: 0%;
               top: 85%
             }
@@ -147,7 +147,7 @@
             }
 
             .text-wrapper-4 {
-              font-size: 4.8vw ;
+              font-size: 3.5vw ;
               left: 0%;
               top: 85%
             }
@@ -172,6 +172,7 @@
 
         img {
           width: 40%;
+          min-width: 80px;
         }
       }
     }

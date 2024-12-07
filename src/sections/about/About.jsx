@@ -16,7 +16,7 @@ const About = ({forwardedRef}) => {
         <div className="title">
               <div className="overlap-group">
                 <div className="text-wrapper">{t("HELLO_IM")}</div>
-                <div className="text-wrapper-2">Jakob Löhrer</div>
+                <div className="text-wrapper-2">Jakob</div>
                 <div className="text-wrapper-3">{t("AND_IM_A")}</div>
                 <div className="text-wrapper-4">Frontend Developer</div>
           </div>
