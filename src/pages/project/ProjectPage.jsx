@@ -6,7 +6,7 @@ import TextBox from "../../common/textBox/TextBox";
 import { FiExternalLink } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import "./ProjectPage.scss";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineArrowLeft } from "react-icons/ai";
 import ReactDOM from "react-dom";
 
 const ProjectPage = () => {
@@ -65,6 +65,7 @@ const ProjectPage = () => {
               <h1>{title}</h1>
               <button className="close-button" onClick={handleBack}>
                 <AiOutlineClose />
+                {/* <AiOutlineArrowLeft /> */}
               </button>
             </div>
           </div>
