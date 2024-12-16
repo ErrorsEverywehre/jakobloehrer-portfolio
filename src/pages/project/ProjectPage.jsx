@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import "./ProjectPage.scss";
 import { AiOutlineClose, AiOutlineArrowLeft } from "react-icons/ai";
 import ReactDOM from "react-dom";
+import { Loader } from "../../common/loader/Loader";
 
 const ProjectPage = () => {
   const { id } = useParams(); // Get the project ID from the URL
@@ -51,7 +52,11 @@ const ProjectPage = () => {
   };
 
   if (!project) {
-    return <p>Loading...</p>;
+    return   (
+      <div className="loader-wrapper">
+        <Loader isLoading={!project} />
+      </div>
+    )
   }
 
   const title = project?.title?.[i18n.language] ?? project?.title?.de;

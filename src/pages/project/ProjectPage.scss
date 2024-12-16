@@ -1,3 +1,6 @@
+:root{
+
+
 .project-page {
   background: var(--accent);
   position: fixed;
@@ -6,6 +9,8 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   .project-wrapper {
     height: 100%;
@@ -22,7 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      text-wrap: wrap;
       h2 {
         color: var(--accent);
       }
@@ -32,7 +37,7 @@
         border: none;
         cursor: pointer;
         font-size: 24px;
-        margin: auto 0; 
+        margin: auto 0;
       }
       .title-wrapper {
         display: flex;
@@ -53,6 +58,7 @@
           text-align: justify;
           white-space: nowrap;
           width: 100%;
+          text-wrap: wrap;
         }
       }
     }
@@ -157,4 +163,11 @@
       }
     }
   }
+}
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 }

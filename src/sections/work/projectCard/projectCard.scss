@@ -6,28 +6,38 @@
   flex-direction: column;
   border: 2px solid var(--secondary);
   cursor: pointer;
+  position: relative; /* Needed for absolute positioning inside */
+  transition: border-width 0.2s ease-in-out;
 
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
+
   .title-wrapper {
-    position: flex-end;
+    position: absolute;
+    bottom: 0%; /* Start hidden below the card */
+    width: 100%;
     background-color: var(--secondary);
     color: var(--accent);
-    align-items: center;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease; //, background-color 0.3s ease, color 0.3s ease;
+    transform: translateY(100%); /* Fully hidden below the card */
   }
 
   &:hover {
-    border: 2px solid var(--accent);
-
+    border:  solid var(--secondary);
+    border-width: 8px;
+    box-sizing: border-box;
+    width: 232px;
     .title-wrapper {
-      background-color: var(--accent);
-      color: var(--secondary);
+      transform: translateY(0); /* Slide up into view */
+      // background-color: var(--accent);
+      // color: var(--secondary);
     }
   }
-
-
 }
+

@@ -19,6 +19,7 @@ const App = () => {
   useEffect(() => {
     if (location.state?.scrollToWork) {
       workRef.current?.scrollIntoView({ behavior: "smooth" });
+      window.history.replaceState({}, '')
     }
   }, [location]);
 

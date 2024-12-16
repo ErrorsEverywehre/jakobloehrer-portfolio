@@ -2,6 +2,7 @@
 
 :root {
   .contactForm {
+    cursor: url('./../../assets/cursor/feather.cur') , auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -26,6 +27,7 @@
         }
 
         input {
+          cursor: inherit;
           width: 100%;
           height: 23px;
           padding: 0;
@@ -43,6 +45,7 @@
           }
         }
         textarea {
+          cursor: inherit;
           width: 100%;
           height: auto;
           padding: 0;

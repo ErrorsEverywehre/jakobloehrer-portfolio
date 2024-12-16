@@ -101,7 +101,7 @@
               }
             }
 
-        @include breakpoint {
+        @include phone {
           .overlap-group{
             .text-wrapper {
               font-size: 2vw ;

@@ -1,5 +1,10 @@
 
-@mixin breakpoint {
+@mixin phone {
+  @media (max-width: 854px) {
+    @content;
+  }
+}
+@mixin phone-small {
   @media (max-width: 854px) {
     @content;
   }
