@@ -42,7 +42,7 @@ const Navbar = ({ aboutRef, workRef, contactRef }) => {
     <div className="navbar">
       <div className="tabs selection">
         {tabs.map((tab) => (
-          <div
+          <a
             key={tab.id}
             className={`text-wrapper ${
               selectedTab === tab.label ? "bold" : ""
@@ -50,12 +50,12 @@ const Navbar = ({ aboutRef, workRef, contactRef }) => {
             onClick={() => handleTabClick(tab)}
           >
             {t(tab.label)}
-          </div>
+          </a>
         ))}
       </div>
       <div className="languages selection">
         {languages.map((lang) => (
-          <div
+          <button
             onClick={() => {
               setSelectedLang(lang.label);
               changeLanguage(lang.label);
@@ -66,7 +66,7 @@ const Navbar = ({ aboutRef, workRef, contactRef }) => {
             }`}
           >
             {lang.label.toLocaleUpperCase()}
-          </div>
+          </button>
         ))}
       </div>
     </div>

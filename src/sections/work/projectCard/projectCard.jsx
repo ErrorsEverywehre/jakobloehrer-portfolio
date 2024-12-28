@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./projectCard.scss";
 
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, redirectUrl }) => {
   const { i18n } = useTranslation();
   const navigate = useNavigate(); // Hook for navigation
 
@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div
       className="card"
-      onClick={() => navigate(`/work/${project.id}`)} // Navigate to /work/:id
+      onClick={() => navigate(redirectUrl)} // Navigate to /work/:id
     >
       <img src={project?.thumbnailUrl} alt={title} />
       <div className="title-wrapper">{title}</div>

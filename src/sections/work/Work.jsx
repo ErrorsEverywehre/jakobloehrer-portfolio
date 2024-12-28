@@ -40,7 +40,7 @@ const Work = ({ forwardedRef }) => {
       )}
       <div className="projects-list">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard redirectUrl={`/work/${project.id}`} key={project.id} project={project} />
         ))}
       </div>
     </div>

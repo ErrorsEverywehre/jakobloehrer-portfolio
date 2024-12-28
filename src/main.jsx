@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AdminPage from "./pages/admin/AdminPage";
 import ProjectPage from "./pages/project/ProjectPage";
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
+import ProjectForm from "./pages/admin/projectForm/ProjectForm";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,6 +20,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <AdminPage />
           </ProtectedRoute>
         }
+
+      />
+        <Route
+        path="/admin/projects/:id"
+        element={
+          <ProtectedRoute>
+            <ProjectForm />
+          </ProtectedRoute>
+        }
+
       />
         <Route path="/work/:id" element={<ProjectPage />} />
         <Route path="*" element={<App />} />
