@@ -6,15 +6,19 @@
     .textBox-wrapper {
       width: 100%;
       margin: var(--space-biggest) 0;
+      padding:0 var(--space-smaller);
     }
 
     .content-wrapper {
       display: flex;
       gap: var(--space-huge);
       flex-direction: row;
+      padding:0 var(--space-smaller);
 
       @media only screen and (max-width: 600px){
         flex-wrap: wrap-reverse;
+        gap: var(--space-biggest);
+
       }
 
       .left-wrapper,

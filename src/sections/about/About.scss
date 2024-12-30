@@ -9,6 +9,10 @@
     position: relative;
     width: 100%;
     gap: var(--space-huge);
+    @media screen and (max-width: 510px) {
+      justify-content: space-between;
+      gap: var(--space);
+          }
 
     .left-wrapper {
       display: flex;
@@ -16,6 +20,9 @@
       max-width: 360px;
       height: 100%;
       gap: var(--space-biggest);
+
+
+
       .portrait {
         max-width: 100%;
         height: 350px;
@@ -24,7 +31,9 @@
         background-image: url(./../../assets/portrait.png);
         background-position: 50% 50%;
         background-size: cover;
-
+        @include phone{
+          height: 230px;
+        }
         @media screen and (max-width: 510px) {
           height: 200px
        }
@@ -102,7 +111,9 @@
             }
 
         @include phone {
+          height: 230px;
           .overlap-group{
+            top: -10%;
             .text-wrapper {
               font-size: 2vw ;
               left: 20%;
@@ -122,34 +133,45 @@
             .text-wrapper-4 {
               font-size: 4vw ;
               left: 0%;
-              top: 85%
+              top: 85%;
+              text-wrap: wrap;
+              text-align: center;
+               line-break: auto;
+               text-indent: -15px;
             }
           }
         }
         @media screen and (max-width: 510px) {
           height: 200px;
           overflow-x: hidden;
+          top: unset;
+
+          max-width: 100%;
           .overlap-group{
             .text-wrapper {
-              font-size: 3vw ;
-              left: 20%;
-              top: 0%;
+              font-size: 10px ;
+              right: 20%;
+              top: 10%;
             }
             .text-wrapper-2 {
-              font-size: 6vw ;
-              left: 20%;
+              font-size: 30px ;
+              left: 42%;
               top: 20%;
             }
             .text-wrapper-3 {
-              font-size: 3.8vw ;
+              font-size: 10px ;
               left: 10%;
-              top: 60%
+              top: 50%
             }
 
             .text-wrapper-4 {
-              font-size: 3.5vw ;
-              left: 0%;
-              top: 85%
+              font-size: 20px ;
+              left: 25%;
+              top: 65%;
+              width: 60%;
+              text-wrap: wrap;
+              line-break: auto;
+              text-indent: -50%;
             }
           }
         }
